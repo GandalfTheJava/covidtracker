@@ -26,7 +26,7 @@ class App extends Component {
     const { data, country } = this.state;
     return (
       <div className="container" >
-        <div>
+        <div className="title">
           <h1> Covid-19 Tracker </h1>
           <h6>All data gathered from <a href='https://github.com/mathdroid/covid-19-api'>John Hopkins CSSE</a></h6>
         </div>
