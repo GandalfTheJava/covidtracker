@@ -5,14 +5,12 @@ import { fetchCountries } from '../../API.utils';
 
 const CountryPick = ({ handleCountryChange }) => {
     const [countries, setCountries] = useState([]);
-
     useEffect(() => {
         const fetchAPI = async () => {
             setCountries(await fetchCountries());
         };
         fetchAPI();
     }, []);
-
     return (
         <FormControl className='form-control'>
             <NativeSelect defaultValue="" onChange={(e) => handleCountryChange(e.target.value)}>

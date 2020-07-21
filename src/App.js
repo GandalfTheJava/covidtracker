@@ -20,8 +20,7 @@ class App extends Component {
   }
   handleCountryChange = async (country) => {
     const data = await fetchData(country);
-
-    this.setState({ data, country: country });
+    this.setState({ data, country });
   }
   render() {
     const { data } = this.state;
@@ -30,7 +29,7 @@ class App extends Component {
         <h1> Covid-19 Tracker </h1>
         <CardContainer data={data} />
         <CountryPick handleCountryChange={this.handleCountryChange} />
-        <Chart />
+        <Chart data={data} />
       </div>
     );
   }
