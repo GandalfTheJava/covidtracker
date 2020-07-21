@@ -6,11 +6,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-.image {
-  width: 370px;
-  margin-top: 50px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 770px) {
@@ -18,7 +14,4 @@ body {
     margin: 0 10%;
   }
 
-  .image {
-    width: 100%;
-  }
 }

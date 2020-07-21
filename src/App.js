@@ -23,13 +23,13 @@ class App extends Component {
     this.setState({ data, country });
   }
   render() {
-    const { data } = this.state;
+    const { data, country } = this.state;
     return (
       <div className="container" >
         <h1> Covid-19 Tracker </h1>
         <CardContainer data={data} />
         <CountryPick handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} />
+        <Chart data={data} country={country} />
       </div>
     );
   }
