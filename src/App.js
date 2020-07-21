@@ -27,6 +27,7 @@ class App extends Component {
     return (
       <div className="container" >
         <h1> Covid-19 Tracker </h1>
+        <h6>All data gathered from <a href='https://github.com/mathdroid/covid-19-api'>John Hopkins CSSE</a></h6>
         <CardContainer data={data} />
         <CountryPick handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />

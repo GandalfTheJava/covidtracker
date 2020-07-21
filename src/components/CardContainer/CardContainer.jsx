@@ -10,7 +10,7 @@ const CardContainer = ({ data }) => {
     return (
         <div>
             <Grid container spacing={3} justify="center">
-                <Grid item xs={12} md={3} component={Card} className='infected'>
+                <Grid item xs component={Card} className='infected'>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
                             Infected
@@ -26,7 +26,7 @@ const CardContainer = ({ data }) => {
                     </Typography>
                     </CardContent>
                 </Grid>
-                <Grid item xs={12} md={3} component={Card} className='recovered'>
+                <Grid item xs component={Card} className='recovered'>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
                             Recovered
@@ -42,7 +42,7 @@ const CardContainer = ({ data }) => {
                     </Typography>
                     </CardContent>
                 </Grid>
-                <Grid item xs={12} md={3} component={Card} className='deaths'>
+                <Grid item xs component={Card} className='deaths'>
                     <CardContent>
                         <Typography color="textSecondary" gutterBottom>
                             Deaths
