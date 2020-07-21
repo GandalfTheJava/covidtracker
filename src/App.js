@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { fetchData } from './API.utils.js';
 import CardContainer from './components/CardContainer/CardContainer';
 import CountryPick from './components/CountryPick/CountryPick';
+import Chart from './components/Chart/Chart';
+
 import './App.scss';
 
 class App extends Component {
@@ -28,6 +30,7 @@ class App extends Component {
         <h1> Covid-19 Tracker </h1>
         <CardContainer data={data} />
         <CountryPick handleCountryChange={this.handleCountryChange} />
+        <Chart />
       </div>
     );
   }
